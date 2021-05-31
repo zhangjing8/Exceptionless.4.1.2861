@@ -1,0 +1,665 @@
+2020-12-21 09:04:22.1830    1  WARN Bootstrapper StatsD Metrics is NOT enabled. 
+2020-12-21 09:04:22.2049    1  WARN Bootstrapper Emails will NOT be sent in Dev mode. 
+2020-12-21 09:04:22.2049    1  WARN Bootstrapper Redis is NOT enabled. 
+2020-12-21 09:04:22.2049    1  WARN Bootstrapper Azure Storage is NOT enabled. 
+2020-12-21 09:04:24.5973    1  WARN AppBuilder Jobs running in process. 
+2020-12-21 09:04:27.1988    6 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 09:04:29.6963   35 ERROR DownloadGeoIPDatabaseJob An error occurred while downloading the GeoIP database. System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 09:04:29.7089   35 ERROR DownloadGeoIPDatabaseJob Job run "DownloadGeoIPDatabaseJob" failed: 发送请求时出错。 System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 09:27:26.4599    1  WARN Bootstrapper StatsD Metrics is NOT enabled. 
+2020-12-21 09:27:26.4958    1  WARN Bootstrapper Emails will NOT be sent in Dev mode. 
+2020-12-21 09:27:26.4958    1  WARN Bootstrapper Redis is NOT enabled. 
+2020-12-21 09:27:26.4958    1  WARN Bootstrapper Azure Storage is NOT enabled. 
+2020-12-21 09:27:28.8957    1  WARN AppBuilder Jobs running in process. 
+2020-12-21 09:27:33.0775   11 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 09:27:33.9972   10 ERROR DownloadGeoIPDatabaseJob An error occurred while downloading the GeoIP database. System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 09:27:34.0071   10 ERROR DownloadGeoIPDatabaseJob Job run "DownloadGeoIPDatabaseJob" failed: 发送请求时出错。 System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 09:28:29.0226   21 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 09:32:08.8156   34 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 09:33:23.6951    8 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 09:33:23.6951   28 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 09:35:17.7775   17 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 09:35:17.7775   19 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:16:42.6217   70 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:28:19.0340   76 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:28:29.1701   40 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 10:41:15.1795   99 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:41:15.1985   17 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:42:37.8209   31 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:43:46.0261   92 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:50:10.0190   31 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 10:50:10.0190   32 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:05:52.5157   65 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:05:52.5157   90 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:07:21.8586   65 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:07:21.8805   73 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:24:52.4557   67 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:28:29.2908  160 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:28:29.2908  157 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 11:37:59.2627  173 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 11:37:59.2767   67 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 12:28:31.0994  147 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 12:28:31.0994  148 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 13:12:18.2777  128 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:12:18.2777   72 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:13:52.6199   72 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:13:52.6199  167 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:15:52.9860  166 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:15:52.9860  146 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:19:04.7196  128 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:19:04.7196  148 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:28:31.2301  104 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:28:31.2301  130 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 13:39:43.0778  178 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:39:43.0778  128 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:39:43.0778  167 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:43:04.0794  117 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:47:32.8846  178 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:47:32.8846  166 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:48:42.1179  151 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:51:33.0701  138 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:51:33.0701  155 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:52:52.8007  151 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:52:52.8007   70 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:54:16.8377   72 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:54:16.8377   70 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:55:22.5162  170 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:55:22.5162   70 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:56:26.4690  156 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:59:32.4547   72 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 13:59:32.4547  155 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:02:58.6081  117 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:04:02.7372  159 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:05:07.6612  126 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:09:55.8545  125 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:15:43.6123  129 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:20:44.3905   70 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:23:46.2922   36 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:23:46.2922   39 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:26:23.5885   51 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:26:23.5885  126 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:28:31.3539   15 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:28:31.3539   32 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 14:31:19.6104  101 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:31:19.6104   92 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:32:42.8996  141 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:34:22.8214  126 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:34:22.8214   74 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:37:34.4719   92 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:38:57.1127  193 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:43:22.7958   68 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:48:51.9952  195 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:48:51.9952  182 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:52:28.6319  197 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:52:28.6319  191 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:53:23.3470    1  WARN Bootstrapper StatsD Metrics is NOT enabled. 
+2020-12-21 14:53:23.3610    1  WARN Bootstrapper Emails will NOT be sent in Dev mode. 
+2020-12-21 14:53:23.3610    1  WARN Bootstrapper Redis is NOT enabled. 
+2020-12-21 14:53:23.3610    1  WARN Bootstrapper Azure Storage is NOT enabled. 
+2020-12-21 14:53:24.7609    1  WARN AppBuilder Jobs running in process. 
+2020-12-21 14:53:25.9228   12 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:53:29.8218   11 ERROR DownloadGeoIPDatabaseJob An error occurred while downloading the GeoIP database. System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 14:53:29.8218   11 ERROR DownloadGeoIPDatabaseJob Job run "DownloadGeoIPDatabaseJob" failed: 发送请求时出错。 System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 14:54:24.8814   34 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 14:56:27.8834    1  WARN Bootstrapper StatsD Metrics is NOT enabled. 
+2020-12-21 14:56:27.8973    1  WARN Bootstrapper Emails will NOT be sent in Dev mode. 
+2020-12-21 14:56:27.8973    1  WARN Bootstrapper Redis is NOT enabled. 
+2020-12-21 14:56:27.8973    1  WARN Bootstrapper Azure Storage is NOT enabled. 
+2020-12-21 14:56:29.3057    1  WARN AppBuilder Jobs running in process. 
+2020-12-21 14:56:31.4372    6 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 14:56:34.3721   25 ERROR DownloadGeoIPDatabaseJob An error occurred while downloading the GeoIP database. System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 14:56:34.3721   25 ERROR DownloadGeoIPDatabaseJob Job run "DownloadGeoIPDatabaseJob" failed: 发送请求时出错。 System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 15:10:04.7829    1  WARN Bootstrapper StatsD Metrics is NOT enabled. 
+2020-12-21 15:10:04.7978    1  WARN Bootstrapper Emails will NOT be sent in Dev mode. 
+2020-12-21 15:10:04.7978    1  WARN Bootstrapper Redis is NOT enabled. 
+2020-12-21 15:10:04.7978    1  WARN Bootstrapper Azure Storage is NOT enabled. 
+2020-12-21 15:10:06.1784    1  WARN AppBuilder Jobs running in process. 
+2020-12-21 15:10:08.6194   10 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 15:10:11.2388    6 ERROR DownloadGeoIPDatabaseJob An error occurred while downloading the GeoIP database. System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 15:10:11.2388    6 ERROR DownloadGeoIPDatabaseJob Job run "DownloadGeoIPDatabaseJob" failed: 发送请求时出错。 System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-21 15:11:06.3681   17 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 15:11:27.6405   25 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 15:16:46.4774   31 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 15:17:47.3579   34 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 16:11:06.4958   44 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 16:11:06.4958   42 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()
+2020-12-21 17:11:06.6328  166 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-21 17:11:06.6468  164 ERROR DailySummaryJob Job run "DailySummaryJob" failed: 未将对象引用设置到对象的实例。 System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<SendSummaryNotificationAsync>d__10.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 128
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Exceptionless.Core.Jobs.DailySummaryJob.<RunInternalAsync>d__9.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DailySummaryJob.cs:行号 72
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 Foundatio.Jobs.JobWithLockBase.<RunAsync>d__7.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Foundatio.Jobs.JobExtensions.<TryRunAsync>d__0.MoveNext()

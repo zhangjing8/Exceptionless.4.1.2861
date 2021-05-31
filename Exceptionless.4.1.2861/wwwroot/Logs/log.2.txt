@@ -1,0 +1,53 @@
+2020-12-18 12:59:06.4676    1  WARN Bootstrapper StatsD Metrics is NOT enabled. 
+2020-12-18 12:59:06.4915    1  WARN Bootstrapper Emails will NOT be sent in Dev mode. 
+2020-12-18 12:59:06.4915    1  WARN Bootstrapper Redis is NOT enabled. 
+2020-12-18 12:59:06.4915    1  WARN Bootstrapper Azure Storage is NOT enabled. 
+2020-12-18 12:59:14.3477    1  WARN AppBuilder Jobs running in process. 
+2020-12-18 12:59:19.4183   16 ERROR DownloadGeoIPDatabaseJob An error occurred while downloading the GeoIP database. System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-18 12:59:19.4383   16 ERROR DownloadGeoIPDatabaseJob Job run "DownloadGeoIPDatabaseJob" failed: 发送请求时出错。 System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-18 12:59:48.7001    7 ERROR AuthController Login failed for "872958976@qq.com": User not found. 
+2020-12-18 13:03:08.5884   39 ERROR AuthController Login failed for "872958976@qq.com": User not found. 
+2020-12-18 13:03:54.7383   38 ERROR AuthController Login failed for "872958976@qq.com": User not found. 
+2020-12-18 13:04:19.5378   16 ERROR AuthController Login failed for "872958976@qq.com": User not found. 
+2020-12-18 13:04:22.4702    7 ERROR AuthController Login failed for "872958976@qq.com": User not found. 
+2020-12-18 22:30:44.7163    1  WARN Bootstrapper StatsD Metrics is NOT enabled. 
+2020-12-18 22:30:44.7392    1  WARN Bootstrapper Emails will NOT be sent in Dev mode. 
+2020-12-18 22:30:44.7392    1  WARN Bootstrapper Redis is NOT enabled. 
+2020-12-18 22:30:44.7392    1  WARN Bootstrapper Azure Storage is NOT enabled. 
+2020-12-18 22:30:47.6132    1  WARN AppBuilder Jobs running in process. 
+2020-12-18 22:30:52.6853   12 ERROR DownloadGeoIPDatabaseJob An error occurred while downloading the GeoIP database. System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-18 22:30:52.7064   12 ERROR DownloadGeoIPDatabaseJob Job run "DownloadGeoIPDatabaseJob" failed: 发送请求时出错。 System.Net.Http.HttpRequestException: 发送请求时出错。 ---> System.Net.WebException: 未能解析此远程名称: 'geolite.maxmind.com'
+   在 System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   在 System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 Exceptionless.Core.Jobs.DownloadGeoIPDatabaseJob.<RunInternalAsync>d__4.MoveNext() 位置 C:\projects\exceptionless\src\Exceptionless.Core\Jobs\DownloadGeoIPDatabaseJob.cs:行号 41
+2020-12-18 23:45:38.3472   43 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
+2020-12-18 23:52:35.3320   97 ERROR ElasticQueryParserConfiguration Original: (404 - WebException) 远程服务器返回错误: (404) 未找到。
+Server: (404) Type: index_not_found_exception Reason: "no such index"
+ System.Net.WebException: 远程服务器返回错误: (404) 未找到。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 Elasticsearch.Net.HttpConnection.Request[TReturn](RequestData requestData)
